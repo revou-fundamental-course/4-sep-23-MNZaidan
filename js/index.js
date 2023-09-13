@@ -15,12 +15,19 @@ navLinks.forEach(link => {
 document.getElementById('hitung keliling').onclick = function () {
     const length = parseFloat(document.getElementById("sisi keliling").value);
         const perimeter = 4 * length;
+        if (isNaN(length)) {
+            document.getElementById("hasil keliling").innerHTML = "Masukkan panjang sisi yang valid.";
+        } else {
         document.getElementById("hasil keliling").innerHTML = `K = 4 × S<br>K = 4 × ${length}<br>Keliling = ${perimeter}`;
+        }
 }
 
 document.getElementById('hitung luas').onclick = function () {
     const length = parseFloat(document.getElementById("sisi luas").value);
+    if (isNaN(length)) {
+        document.getElementById("hasil luas").innerHTML = "Masukkan panjang sisi yang valid.";
+    } else {
     const area = length * length;
     document.getElementById("hasil luas").innerHTML = `L = S × S<br>L = ${length} × ${length}<br>Luas = ${area}`;
-    
+    }
 }
