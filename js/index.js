@@ -12,6 +12,7 @@ navLinks.forEach(link => {
 
 
 
+
 document.getElementById('hitung keliling').onclick = function () {
     const length = parseFloat(document.getElementById("sisi keliling").value);
         const perimeter = 4 * length;
