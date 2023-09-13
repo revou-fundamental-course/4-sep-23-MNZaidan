@@ -3,20 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calmac</title>
+    <title>Manzi</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div class="header">
-        <h1>Calmac</h1>
-        <p>Kalkulator Persegi</p>
+        <h1>Manzi</h1>
+        <h2 id="sub-header">Kalkulator Persegi</h2>
     </div>
+
     <nav class="navbar">
         <ul>
-          <li><a href="#">Luas</a></li>
-          <li><a href="#">Keliling</a></li>
+          <li><a href="#keliling">Keliling</a></li>
+          <li><a href="#luas">Luas</a></li>
         </ul>
       </nav>
+      <br>
+      <br>
+      <section class="container" id="keliling" >
+        <h2> Keliling Persegi</h2>
+        <div class="image-container bujur-sangkar"></div>
+        <p>Rumus keliling persegi yaitu:</p>
+        <div class="rumus">K = 4 × S</div>
+        <p>dimana:</p>
+        <p>K = Keliling</p>
+        <p>S = Sisi</p>
+        <input type="number" id="sisi keliling" placeholder="Masukkan panjang sisi">
+        <br>
+        <button id="hitung keliling">Hitung</button>
+        <div id="hasil keliling">Hasil</div>
+      </section>
+      <br>
+      <br>
+      <section class="container" id="luas">
+        <h2> Luas Persegi</h2>
+        <div class="image-container bujur-sangkar"></div>
+        <p>Rumus Luas persegi yaitu:</p>
+        <div class="rumus">L = S × S</div>
+        <p>dimana:</p>
+        <p>L = Luas</p>
+        <p>S = Sisi</p>
+        <input type="number" id="sisi luas" placeholder="Masukkan panjang sisi">
+        <br>
+        <button id="hitung luas">Hitung</button>
+        <div id="hasil luas">Hasil</div>
+      </section>
 <script src="js/index.js"></script>
 </body>
 </html>

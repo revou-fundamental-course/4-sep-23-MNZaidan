@@ -5,15 +5,23 @@
 * #EFE1D1
 */
 
+body {
+  margin: 0px;
+}
+
 
 .header {
     padding: 6px;
     text-align: center;
     background: #3F2E3E;
     color: #EFE1D1;
-    font-size: 12px;
+    font-size: 18px;
 }
 
+#subheader {
+  color: #EFE1D1;
+  font-size: 12;
+}
 
 .navbar {
     background-color: #331D2C;
@@ -42,3 +50,62 @@
     background-color: #A78295;
     color: #331D2C;
   }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #EFE1D1;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.image-container {
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+
+.bujur-sangkar {
+  width: 200px;
+  height: 200px;
+  background-image: url('https://awsimages.detik.net.id/community/media/visual/2022/08/16/bujur-sangkar.jpeg?w=1037');
+}
+
+p {
+   font-size: 16px;
+   color: #331D2C;
+}
+
+.rumus {
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #331D2C;
+  border: 3px solid #331D2C;
+}
+
+input {
+  border: 2px solid #331D2C;
+  border-radius: 6px;
+  width: 85%;
+  padding: 10px;
+}
+
+#hitung {
+  background-color: #3F2E3E;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#hasil {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 60px;
+}
