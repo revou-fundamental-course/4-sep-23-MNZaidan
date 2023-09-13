@@ -1,64 +1,44 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Color Palette
+* #331D2C
+* #3F2E3E
+* #A78295
+* #EFE1D1
+*/
+
+
+.header {
+    padding: 6px;
+    text-align: center;
+    background: #3F2E3E;
+    color: #EFE1D1;
+    font-size: 12px;
 }
 
-header {
+
+.navbar {
     background-color: #331D2C;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar a {
+    display: block;
     color: #EFE1D1;
     text-align: center;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 6;
-    font-size: 16px;
-    font-weight: bold;
-    color: #3F2E3E;
-}
-
-input {
-    padding: 12px;
-    border: 1px solid #A78295;
-    border-radius: 8px;
-    outline: none;
-}
-
-button {
-    padding: 10px 20px;
-    border-radius: 16px;
-    border: 0px;
-    background-color: #EFE1D1 ;
-    color: #331D2C;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
     background-color: #A78295;
-    color: #3F2E3E;
-}
-
-button:active {
-    scale: 96%;
-}
-
-input:focus{
-    border-color: #3F2E3E;
-}
-
-.LuasInputSection {
-    display: flex;
-    flex-direction: column;
-    margin-top: 24px;
-}
-
-.inputButtonSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 12px;
-}
+    color: #331D2C;
+  }
